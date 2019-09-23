@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title></title>
+
+</head>
+
+<body>
+
+   <h1 id='message'></h1>
+
+   <script type="text/javascript">
+  
+      var english = Number(prompt("Your grade in english"));
+      var math = Number(prompt("Your grade in math"));
+      var physics = Number(prompt("Your grade in physics"));
+
+      function sum(english,math,physics) {
+        return english + math + physics;
+      }
+
+      function average(english,math,physics) {
+        return (english + math + physics)/3;
+      }
+
+
+      document.write("The sum of your grade is " + sum(english, math, physics));
+      document.write("The average of your grade is " + Math.round(average(english, math, physics)));
+
+
+   </script>
+
+   
+
+</body>
+
+</html>
